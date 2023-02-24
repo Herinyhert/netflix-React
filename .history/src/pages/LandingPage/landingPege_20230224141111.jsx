@@ -1,4 +1,3 @@
-import Search from "../../components/Search/Search";
 import MoviesGrid from "../../components/MoviesGrid/MoviesGrid"
 
 function LandingPage(){

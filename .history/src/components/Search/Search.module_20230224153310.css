@@ -1,0 +1,14 @@
+.searchContainer{
+    display: flex;
+    justify-content: center;
+}
+.searchBox{
+    position: relative;
+}
+.searchInput{
+
+}
+.searchButton{
+    position: absolute;
+    right: 0;
+}

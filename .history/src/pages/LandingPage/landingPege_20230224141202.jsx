@@ -1,4 +1,4 @@
-import Search from "../../components/Search/Search";
+import { FaSearch } from "react-icons/fa";
 import MoviesGrid from "../../components/MoviesGrid/MoviesGrid"
 
 function LandingPage(){
