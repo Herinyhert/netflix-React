@@ -2,7 +2,6 @@ import styles from "./MovieDetail.module.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { get } from "../../utils/httpClients";
-import { Spinner } from "../../components/Loading/Spinner";
 
 function MovieDetail() {
   const { movieId } = useParams();
@@ -19,7 +18,13 @@ function MovieDetail() {
   }, [movieId]);
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      spi
+    );
+  }
+
+  if (!movie) {
+    return null;
   }
 
   const imgDetail = "https://image.tmdb.org/t/p/w500" + movie.poster_path;

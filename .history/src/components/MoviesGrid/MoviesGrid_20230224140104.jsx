@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { get } from "../../utils/httpClients";
 import { Spinner } from "../Loading/Spinner";
 import { MovieCard } from "../MovieCard/MovieCard";

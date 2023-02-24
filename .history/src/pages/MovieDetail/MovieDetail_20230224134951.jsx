@@ -13,13 +13,19 @@ function MovieDetail() {
     setIsLoading(true);
 
     get("/movie/" + movieId).then((data) => {
-      setIsLoading(false);
+      setIsLoading(faltruese);
       setMovie(data);
     });
   }, [movieId]);
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <Spinner />
+    );
+  }
+
+  if (!movie) {
+    return null;
   }
 
   const imgDetail = "https://image.tmdb.org/t/p/w500" + movie.poster_path;

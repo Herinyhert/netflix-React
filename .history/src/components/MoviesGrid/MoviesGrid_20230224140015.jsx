@@ -1,28 +1,25 @@
 import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { get } from "../../utils/httpClients";
-import { Spinner } from "../Loading/Spinner";
 import { MovieCard } from "../MovieCard/MovieCard";
 
 import style from "./MoviesGrid.module.css";
 
 export default function MoviesGrid() {
-  const [movies, setMovies] = useState([]);
-  const [isLodin, setisLodin] = useState(true);
+  
+    const [movies, setMovies] = useState([]);
+    const [isLodin, setisLodin] = useState(true);
 
-  useEffect(() => {
-    setisLodin(true);
+  useEffect(() => {  
+    setisLodin(true)
     get("/discover/movie").then((data) => {
-      // console.log(movies)
-      setMovies(data.results);
-      setisLodin(false);
-    });
-  }, []);
+        // console.log(movies)
+        setMovies(data.results)
+        setisLodin(false)
+      });
+  },[]);
 
-  if (isLodin) {
-    return <Spinner />;
-  }
-
+  
   return (
     <ul className={style.moviesGrid}>
       {movies.map((movie) => (

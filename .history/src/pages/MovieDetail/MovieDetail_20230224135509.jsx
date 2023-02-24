@@ -19,7 +19,9 @@ function MovieDetail() {
   }, [movieId]);
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <Spinner />
+    );
   }
 
   const imgDetail = "https://image.tmdb.org/t/p/w500" + movie.poster_path;

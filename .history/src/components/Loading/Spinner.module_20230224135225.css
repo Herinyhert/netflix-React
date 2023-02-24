@@ -1,0 +1,10 @@
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+.spinning {
+    animation: spinner 1s linear;
+}
+
+@keyframes
