@@ -16,7 +16,7 @@ export default function Search() {
   };
 
   useEffect(() => {
-    setSearchText(search || "")
+    setSearchText()
   }, [search]);
   return (
     <form className={styles.searchContainer} onSubmit={handleSubmit}>

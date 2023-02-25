@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useQuery } from "../../hooks/useQuery";
 import { get } from "../../utils/httpClients";
 import { Spinner } from "../Loading/Spinner";
@@ -9,6 +10,8 @@ import style from "./MoviesGrid.module.css";
 export default function MoviesGrid() {
   const [movies, setMovies] = useState([]);
   const [isLodin, setisLodin] = useState(true);
+
+
 
   const query = useQuery();
   const search = query.get("search");

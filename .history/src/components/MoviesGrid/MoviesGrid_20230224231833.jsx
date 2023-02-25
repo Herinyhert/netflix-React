@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useQuery } from "../../hooks/useQuery";
+// import { useParams } from "react-router-dom";
 import { get } from "../../utils/httpClients";
 import { Spinner } from "../Loading/Spinner";
 import { MovieCard } from "../MovieCard/MovieCard";
@@ -10,21 +10,16 @@ export default function MoviesGrid() {
   const [movies, setMovies] = useState([]);
   const [isLodin, setisLodin] = useState(true);
 
-  const query = useQuery();
-  const search = query.get("search");
-  // console.log(search);
+  useLocation
 
   useEffect(() => {
     setisLodin(true);
-    const searchUrl = search
-      ? "/search/movie?query=" + search
-      : "/discover/movie";
-    get(searchUrl).then((data) => {
+    get("/discover/movie").then((data) => {
       // console.log(movies)
       setMovies(data.results);
       setisLodin(false);
     });
-  }, [search]);
+  }, []);
 
   if (isLodin) {
     return <Spinner />;

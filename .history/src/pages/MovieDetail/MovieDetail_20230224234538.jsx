@@ -9,6 +9,7 @@ function MovieDetail() {
   const [isLoading, setIsLoading] = useState(true);
   const [movie, setMovie] = useState(null);
   
+
   useEffect(() => {
     setIsLoading(true);
 

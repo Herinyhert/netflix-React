@@ -10,6 +10,8 @@ export default function MoviesGrid() {
   const [movies, setMovies] = useState([]);
   const [isLodin, setisLodin] = useState(true);
 
+
+
   const query = useQuery();
   const search = query.get("search");
   // console.log(search);

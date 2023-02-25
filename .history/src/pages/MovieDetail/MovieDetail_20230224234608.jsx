@@ -8,7 +8,8 @@ function MovieDetail() {
   const { movieId } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [movie, setMovie] = useState(null);
-  
+  const search = useQue
+
   useEffect(() => {
     setIsLoading(true);
 
