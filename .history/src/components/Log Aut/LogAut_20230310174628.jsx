@@ -5,11 +5,7 @@ import styles from "./LogAut.module.css"
 function LogAut() {
     const { logaut } = useAuth0();
     // return <button onClick={()=> logaut({ returnTo: "http://localhost:3000/"})} >Log Aut</button>
-    return (
-        <div className={styles.conten} >
-            <button class={styles.logButton} onClick={()=> logaut({ returnTo: window.location.origin})} >Log Aut</button>
-        </div>
-    )
+    return 
 }
 
 export default LogAut

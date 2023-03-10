@@ -5,8 +5,8 @@ import styles from "../Sig in/SigIn.module.css"
 function SigIn() {
     const { loginWithRedirect } = useAuth0();
     return (
-        <div className={styles.conten} >
-            <button className={styles.siginButton} onClick={() => loginWithRedirect()} >Login</button>
+        <div className={styles.sigin} >
+            <button  onClick={() => loginWithRedirect()} >Login</button>
         </div>
     )
 }

@@ -6,7 +6,7 @@ function SigIn() {
     const { loginWithRedirect } = useAuth0();
     return (
         <div className={styles.conten} >
-            <button className={styles.siginButton} onClick={() => loginWithRedirect()} >Login</button>
+            <button className={styles.sigin} onClick={() => loginWithRedirect()} >Login</button>
         </div>
     )
 }

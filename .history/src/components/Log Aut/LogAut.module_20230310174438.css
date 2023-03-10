@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
 }
-.siginButton{
+.logButton{
     position: absolute;
     left: 10px;
     font-size: 3rem;
