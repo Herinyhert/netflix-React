@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.contend{
+    position: relative;
+    background-color: aqua;
+}
+.img{
+margin: 10px;
+border-radius: 50%;
+}
+.name{
+    position: absolute;
+    left: 150px;
+    top: 0;
+}

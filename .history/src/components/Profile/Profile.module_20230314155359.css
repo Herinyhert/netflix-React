@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.img{
+margin: 10px;
+border-radius: 50%;
+}
+.name{
+
+}

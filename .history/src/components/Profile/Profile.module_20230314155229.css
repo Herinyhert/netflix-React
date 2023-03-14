@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.img{
+margin: 10px;
+margin-top: 100px;
+border-radius: 20;
+}
+.name{
+
+}
