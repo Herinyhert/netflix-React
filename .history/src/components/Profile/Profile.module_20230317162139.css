@@ -1,10 +1,6 @@
-.containerT{
+.container {
     display: flex;
     justify-content: center;
-}
-.container {
-position: absolute;
-right:150px;
   }
   
   .contend {
@@ -27,6 +23,10 @@ right:150px;
     color: white;
     cursor: pointer;
   }
-
+  .nameContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
   
   

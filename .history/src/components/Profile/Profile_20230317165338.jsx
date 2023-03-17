@@ -22,14 +22,7 @@ export const Profile = () => {
               onClick={() => setShowName(!showName)}
             />
             <div>
-              {showName && (
-                <span
-                  className={styles.name}
-                  onClick={() => setShowName(!showName)}
-                >
-                  <div>{user.name}</div>
-                  <div>{user.email}</div>
-                </span>
+              {showName && (  
               )}
             </div>
           </div>

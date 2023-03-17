@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.contend{
+    position: absolute;
+    right: 0;
+}
+.img{
+margin: 10px 5px 0 5px;
+border-radius: 50%;
+cursor: pointer;
+}
+.img:hove{
+    display: none, none;
+}
+.name{
+    position: absolute;
+    left: 110px;
+    top: 0;
+    display: none;
+}

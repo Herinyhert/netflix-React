@@ -3,8 +3,7 @@
     justify-content: center;
 }
 .container {
-position: absolute;
-right:150px;
+position: relative;
   }
   
   .contend {

@@ -1,10 +1,9 @@
 .containerT{
-    display: flex;
-    justify-content: center;
+    
 }
 .container {
-position: absolute;
-right:150px;
+    display: flex;
+    justify-content: center;
   }
   
   .contend {

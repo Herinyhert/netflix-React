@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contend {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
+  display: none;
+  font-size: 24px;
+}
+
+.show-name {
+  display: block !important;
+}
+  
+  
