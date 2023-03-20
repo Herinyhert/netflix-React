@@ -26,7 +26,7 @@ export const Profile = () => {
                 '--picture-left': showName ? 'auto' : '0',
                 '--picture-top': showName ? 'auto' : '0',
                 '--picture-width': showName ? 'auto' : '50px',
-                '--picture-height': showName ? 'auto' : '50px',
+                '--picture-height': showDetails ? 'auto' : '50px',
               }}
             />
             <div>

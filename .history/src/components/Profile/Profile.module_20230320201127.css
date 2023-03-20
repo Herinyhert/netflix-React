@@ -1,0 +1,42 @@
+.containerT{
+    display: flex;
+    justify-content: center;
+}
+.container {
+position: absolute;
+right:150px;
+  }
+  
+  .contend {
+    position: relative;
+  }
+  
+  /* .picture {
+    margin: 10px 5px 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  } */
+
+  
+  
+  .name {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  .containerCentered {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -50px;
+  }
+  
+  
+  

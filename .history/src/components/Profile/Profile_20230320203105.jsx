@@ -17,17 +17,10 @@ export const Profile = () => {
         <div className={styles.container}>
           <div className={styles.contend}>
             <img
-              className={styles.picture}
+              className={styles.}
               src={user.picture}
               alt={user.name}
               onClick={() => setShowName(!showName)}
-              style={{
-                '--picture-position': showName ? 'static' : 'absolute',
-                '--picture-left': showName ? 'auto' : '0',
-                '--picture-top': showName ? 'auto' : '0',
-                '--picture-width': showName ? 'auto' : '50px',
-                '--picture-height': showName ? 'auto' : '50px',
-              }}
             />
             <div>
               {showName && (
@@ -42,6 +35,7 @@ export const Profile = () => {
             </div>
           </div>
         </div>
+              {/* <img src={user.picture} alt="hola" /> */}
       </div>
     )
   );

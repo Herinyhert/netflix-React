@@ -10,30 +10,11 @@ right:150px;
   .contend {
     position: relative;
   }
-/*   
-  .picture {
-    margin: 10px 5px 0 5px;
-    border-radius: 50%;
-    cursor: pointer;
-  } */
-
-  :root {
-    --picture-position: absolute;
-    --picture-left: 0;
-    --picture-top: 0;
-    --picture-width: 50px;
-    --picture-height: 50px;
-  }
   
   .picture {
     margin: 10px 5px 0 5px;
     border-radius: 50%;
     cursor: pointer;
-    position: var(--picture-position);
-    left: var(--picture-left);
-    top: var(--picture-top);
-    width: var(--picture-width);
-    height: var(--picture-height);
   }
   
   .name {
@@ -45,4 +26,5 @@ right:150px;
     font-weight: bold;
     color: white;
     cursor: pointer;
-  } 
+  }
+  

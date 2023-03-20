@@ -1,0 +1,87 @@
+.containerT{
+    display: flex;
+    justify-content: center;
+}
+.container {
+position: absolute;
+right:150px;
+  }
+  
+  .contend {
+    position: relative;
+  }
+/*   
+  .picture {
+    margin: 10px 5px 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  } */
+
+  :root {
+    --picture-position: absolute;
+    --picture-left: 0;
+    --picture-top: 0;
+    --picture-width: 50px;
+    --picture-height: 50px;
+  }
+  
+  .picture {
+    margin: 10px 5px 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: var(--picture-position);
+    left: var(--picture-left);
+    top: var(--picture-top);
+    width: var(--picture-width);
+    height: var(--picture-height);
+  }
+  En tu componente, cambia el valor de la variable de CSS en función del estado de showDetails:
+  css
+  Copy code
+  return (
+    isAuthenticated && (
+      <div className={styles.containerT}>
+        <div className={styles.container}>
+          <div className={styles.contend}>
+            <img
+              className={styles.picture}
+              src={user.picture}
+              alt={user.name}
+              onClick={() => setShowDetails(!showDetails)}
+              style={{
+                '--picture-position': showDetails ? 'static' : 'absolute',
+                '--picture-left': showDetails ? 'auto' : '0',
+                '--picture-top': showDetails ? 'auto' : '0',
+                '--picture-width': showDetails ? 'auto' : '50px',
+                '--picture-height': showDetails ? 'auto' : '50px',
+              }}
+            />
+            {showDetails && (
+              <span className={styles.name} onClick={() => setShowDetails(false)}>
+                <div>{user.name}</div>
+                <div>{user.email}</div>
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+    )
+  );
+  Con esto, deberías poder cambiar la posición y el tamaño de la imagen en función del estado de showDetails sin problemas. Espero que te sea útil.
+  
+  
+  
+  
+  
+  
+  
+  .name {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  } 

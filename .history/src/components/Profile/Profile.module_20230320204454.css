@@ -19,7 +19,7 @@ right:150px;
 
   :root {
     --picture-position: absolute;
-    --picture-left: 0;
+    --picture-left: 100;
     --picture-top: 0;
     --picture-width: 50px;
     --picture-height: 50px;

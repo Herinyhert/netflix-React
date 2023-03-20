@@ -23,7 +23,7 @@ export const Profile = () => {
               onClick={() => setShowName(!showName)}
               style={{
                 '--picture-position': showName ? 'static' : 'absolute',
-                '--picture-left': showName ? 'auto' : '0',
+                '--picture-left': showName ? 'auto' : '200px',
                 '--picture-top': showName ? 'auto' : '0',
                 '--picture-width': showName ? 'auto' : '50px',
                 '--picture-height': showName ? 'auto' : '50px',

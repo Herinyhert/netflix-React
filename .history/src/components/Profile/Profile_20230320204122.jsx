@@ -23,10 +23,10 @@ export const Profile = () => {
               onClick={() => setShowName(!showName)}
               style={{
                 '--picture-position': showName ? 'static' : 'absolute',
-                '--picture-left': showName ? 'auto' : '0',
-                '--picture-top': showName ? 'auto' : '0',
-                '--picture-width': showName ? 'auto' : '50px',
-                '--picture-height': showName ? 'auto' : '50px',
+                '--picture-left': showDetails ? 'auto' : '0',
+                '--picture-top': showDetails ? 'auto' : '0',
+                '--picture-width': showDetails ? 'auto' : '50px',
+                '--picture-height': showDetails ? 'auto' : '50px',
               }}
             />
             <div>

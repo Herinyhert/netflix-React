@@ -10,30 +10,22 @@ right:150px;
   .contend {
     position: relative;
   }
-/*   
-  .picture {
+  
+  /* .picture {
     margin: 10px 5px 0 5px;
     border-radius: 50%;
     cursor: pointer;
   } */
 
-  :root {
-    --picture-position: absolute;
-    --picture-left: 0;
-    --picture-top: 0;
-    --picture-width: 50px;
-    --picture-height: 50px;
-  }
-  
   .picture {
     margin: 10px 5px 0 5px;
     border-radius: 50%;
     cursor: pointer;
-    position: var(--picture-position);
-    left: var(--picture-left);
-    top: var(--picture-top);
-    width: var(--picture-width);
-    height: var(--picture-height);
+    position ${showDetails ? 'static' : 'absolute'};
+    left: ${showDetails ? 'auto' : '0'};
+    top: ${showDetails ? 'auto' : '0'};
+    width: ${showDetails ? 'auto' : '50px'};
+    height: ${showDetails ? 'auto' : '50px'};
   }
   
   .name {
@@ -45,4 +37,15 @@ right:150px;
     font-weight: bold;
     color: white;
     cursor: pointer;
-  } 
+  }
+
+  .containerCentered {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -50px;
+  }
+  
+  
+  
