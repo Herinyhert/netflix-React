@@ -18,6 +18,8 @@
   margin: 15px;
   height: auto;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+
+  /* : rgb(224, 125, 125); */
 }
 .movieImage {
   border-radius: 15px;

@@ -3,7 +3,6 @@ import styles from "./MovieCard.module.css";
 
 export function MovieCard({ movie }) {
   const imgUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
-  console.log(movie, "pelicula");
   return (
     <li className={styles.movieCard}>
       <Link to={"/movies/" + movie.id}>

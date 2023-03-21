@@ -31,19 +31,19 @@ function MovieDetail() {
         src={imgDetail}
         alt={movie.title}
       />
-      <div className={`${styles.contend} ${styles.movieDetails}`}>
+      <div className={`${styles.col} ${styles.movieDetails}`}>
         <p className={styles.firstItem}>
           <strong>Title:</strong> {movie.title}
         </p>
         <p>
-          <strong>Popularity:</strong> {movie.popularity}
+          <strong>Popularity:{movie.}</strong>
         </p>
         <p>
           <strong>Generos:</strong>{" "}
           {movie.genres.map((genre) => genre.name).join(", ")}{" "}
         </p>
         <p>
-          <strong>Language:</strong> {movie.original_language}
+          <strong>Language:{movie.original_language}</strong>
         </p>
         <p>
           <strong>Description:</strong> {movie.overview}

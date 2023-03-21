@@ -5,13 +5,12 @@ import { useAuth0 } from "@auth0/auth0-react";
 function Home() {
   const { isAuthenticated } = useAuth0;
   return (
-    isAuthenticated ? (
+    isAuthenticated  (
       <div>
         <Search />
         <MoviesGrid />
       </div>
-    ) :
-    <p>Error de pg</p>
+    )
   );
 }
 

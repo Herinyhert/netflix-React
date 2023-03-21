@@ -9,6 +9,7 @@ export default function Search() {
   const search = query.get("search")
 
   const [searchText, setSearchText] = useState("");
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   const navigate = useNavigate();
   const handleSubmit = (e) => {

@@ -11,7 +11,6 @@ function Home() {
         <MoviesGrid />
       </div>
     ) :
-    <p>Error de pg</p>
   );
 }
 

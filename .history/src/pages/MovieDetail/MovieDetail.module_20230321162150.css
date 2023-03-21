@@ -1,0 +1,27 @@
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    
+    width: 90%;
+    margin-left: 5%;
+}
+.col{
+    max-width: 400px;
+    margin: 15px;
+    /* height: auto; */
+    height: 500px;
+}
+
+.movieImage{
+    border-radius: 15px;
+}
+
+.movieDetails{
+ font-size: 1.5rem;   
+}
+
+.firstItem{
+    margin-top: 0;
+}

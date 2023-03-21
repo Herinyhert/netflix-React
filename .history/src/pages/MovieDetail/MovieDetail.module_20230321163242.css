@@ -1,0 +1,34 @@
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 90%;
+    margin-left: 5%;
+}
+.col{
+    max-width: 400px;
+    margin: 15px;
+    /* height: auto; */
+    height: 500px;
+}
+
+.contend{
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f5eff2, 0 0 30px #f5eff2, 0 0 40px #f5eff2, 0 0 50px #f5eff2, 0 0 60px #f5eff2;
+
+    /* : rgb(224, 125, 125); */
+}
+.movieImage{
+    border-radius: 15px;
+}
+
+.movieDetails{
+ font-size: 1.5rem;   
+}
+
+.firstItem{
+    margin-top: 0;
+}

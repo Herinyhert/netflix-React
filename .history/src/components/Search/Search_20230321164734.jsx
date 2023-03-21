@@ -3,12 +3,14 @@ import { FaSearch } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useQuery } from "../../hooks/useQuery";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Search() {
   const query = useQuery();
   const search = query.get("search")
 
   const [searchText, setSearchText] = useState("");
+  const { isAuthenticated } = useAuth0();
 
   const navigate = useNavigate();
   const handleSubmit = (e) => {

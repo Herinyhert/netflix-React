@@ -31,12 +31,12 @@ function MovieDetail() {
         src={imgDetail}
         alt={movie.title}
       />
-      <div className={`${styles.contend} ${styles.movieDetails}`}>
+      <div className={`${styles.col} ${styles.movieDetails}`}>
         <p className={styles.firstItem}>
           <strong>Title:</strong> {movie.title}
         </p>
         <p>
-          <strong>Popularity:</strong> {movie.popularity}
+          <strong>Popularity:</strong>
         </p>
         <p>
           <strong>Generos:</strong>{" "}

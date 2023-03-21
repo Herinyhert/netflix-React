@@ -22,7 +22,8 @@ function MovieDetail() {
     return <Spinner />;
   }
 
-  const imgDetail = "https://image.tmdb.org/t/p/w500" + movie.backdrop_path;
+  const imgDetail = "https://image.tmdb.org/t/p/w500" + movie.backdrop_path
+  ;
 
   return (
     <div className={styles.detailsContainer}>
@@ -31,19 +32,13 @@ function MovieDetail() {
         src={imgDetail}
         alt={movie.title}
       />
-      <div className={`${styles.contend} ${styles.movieDetails}`}>
+      <div className={`${styles.col} ${styles.movieDetails}`}>
         <p className={styles.firstItem}>
           <strong>Title:</strong> {movie.title}
         </p>
         <p>
-          <strong>Popularity:</strong> {movie.popularity}
-        </p>
-        <p>
           <strong>Generos:</strong>{" "}
           {movie.genres.map((genre) => genre.name).join(", ")}{" "}
-        </p>
-        <p>
-          <strong>Language:</strong> {movie.original_language}
         </p>
         <p>
           <strong>Description:</strong> {movie.overview}

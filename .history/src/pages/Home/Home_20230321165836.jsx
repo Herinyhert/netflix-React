@@ -10,8 +10,7 @@ function Home() {
         <Search />
         <MoviesGrid />
       </div>
-    ) :
-    <p>Error de pg</p>
+    ) 
   );
 }
 
