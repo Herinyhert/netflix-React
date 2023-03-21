@@ -3,9 +3,8 @@
     justify-content: center;
 }
 .siginButton{
-    position: absolute !important;
-    left: 50%;
-    top: 40%;
+    position: absolute;
+    left: 50px;
     font-size: 3rem;
     text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 5px #8c4eb6, 0 0 10px #8c4eb6, 0 0 20px #8c4eb6, 0 0 30px #8c4eb6, 0 0 40px #e60073;
     cursor: pointer;

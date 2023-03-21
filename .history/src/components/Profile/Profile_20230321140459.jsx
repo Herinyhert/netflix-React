@@ -35,7 +35,7 @@ export const Profile = () => {
                 onClick={() => setShowName(!showName)}
                 >
                   <div>Hola {user.nickname}</div>
-                  {/* <div>{user.email}</div> */}
+                  <div>{user.email}</div>
                 </span>
               )}
             </div>

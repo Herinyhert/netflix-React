@@ -5,6 +5,7 @@ import styles from "./Profile.module.css";
 export const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [showName, setShowName] = useState(false);
+  console.log(user.picture, "este es para sacar la imagen");
   console.log(user, "user");
   if (isLoading) {
     return <div>Loading...</div>;
@@ -34,8 +35,8 @@ export const Profile = () => {
                 className={styles.name}
                 onClick={() => setShowName(!showName)}
                 >
-                  <div>Hola {user.nickname}</div>
-                  {/* <div>{user.email}</div> */}
+                  <div>Hola {user.name}</div>
+                  <div>{user.email}</div>
                 </span>
               )}
             </div>

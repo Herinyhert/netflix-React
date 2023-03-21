@@ -4,15 +4,8 @@
 }
 .container {
 position: absolute;
-left:85%;
+right:0;
   }
-
-  /* @media (max-width: 560px){
-    .container{
-      position: absolute;
-      right:0;
-    }
-  } */
   
   .contend {
     position: relative;
