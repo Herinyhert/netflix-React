@@ -1,0 +1,30 @@
+/* .contend{
+    background-image:url(../../image/backgraum-2.webp);
+    height: 600px;
+    margin: 5%;
+    border-radius: 30px;
+    opacity: 0.5;
+} */
+.loader {
+    border: 8px solid #f3f3f3; /* Establece el borde del loader */
+    border-top: 8px solid #ffbf00; /* Establece el color del borde superior */
+    border-right: 8px solid #ff0080; /* Establece el color del borde derecho */
+    border-bottom: 8px solid #00bfff; /* Establece el color del borde inferior */
+    border-left: 8px solid #00ff7f; /* Establece el color del borde izquierdo */
+    border-radius: 50%; /* Establece la forma del loader */
+    width: 60px; /* Establece el ancho del loader */
+    height: 60px; /* Establece la altura del loader */
+    animation: spin 1.5s linear infinite; /* Establece la animación del loader */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Establece la posición inicial del loader */
+    25% { border-bottom-color: #ffbf00; } /* Establece el color del borde inferior al 25% de la animación */
+    50% { border-left-color: #ff0080; } /* Establece el color del borde izquierdo al 50% de la animación */
+    75% { border-top-color: #00bfff; } /* Establece el color del borde superior al 75% de la animación */
+    100% { 
+      transform: rotate(360deg); /* Establece la posición final del loader */
+      border-right-color: #00ff7f; /* Establece el color del borde derecho al final de la animación */
+    }
+  }
+  

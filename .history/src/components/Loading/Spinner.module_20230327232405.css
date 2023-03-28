@@ -1,0 +1,41 @@
+.spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: ;
+}
+/* 
+.spinning {
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+} */
+.loader {
+    display: flex;
+    justify-content: center;
+    border: 8px solid #f3f3f3; /* Establece el borde del loader */
+    border-top: 8px solid #ffbf00; /* Establece el color del borde superior */
+    border-right: 8px solid #ff0080; /* Establece el color del borde derecho */
+    border-bottom: 8px solid #00bfff; /* Establece el color del borde inferior */
+    border-left: 8px solid #00ff7f; /* Establece el color del borde izquierdo */
+    border-radius: 50%; /* Establece la forma del loader */
+    width: 60px; /* Establece el ancho del loader */
+    height: 60px; /* Establece la altura del loader */
+    animation: spin 1.5s linear infinite; /* Establece la animación del loader */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Establece la posición inicial del loader */
+    20% { border-bottom-color: #ffbf00; } /* Establece el color del borde inferior al 20% de la animación */
+    40% { border-left-color: #ff0080; } /* Establece el color del borde izquierdo al 40% de la animación */
+    60% { border-top-color: #00bfff; } /* Establece el color del borde superior al 60% de la animación */
+    80% { border-right-color: #00ff7f; } /* Establece el color del borde derecho al 80% de la animación */
+    100% { 
+      transform: rotate(360deg); /* Establece la posición final del loader */
+      border-top-color: #ff69b4; /* Establece el color del borde superior al final de la animación */
+    }
+  }
+  

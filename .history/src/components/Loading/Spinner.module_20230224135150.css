@@ -1,8 +1,0 @@
-.spinner {
-    display: flex;
-    justify-content: center;
-}
-
-.spinning {
-    animation: spinner 1s timing-function delay iteration-count direction fill-mode;
-}

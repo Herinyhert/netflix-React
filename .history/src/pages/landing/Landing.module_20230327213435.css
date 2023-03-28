@@ -1,0 +1,13 @@
+/* .contend{
+    background-image:url(../../image/backgraum-2.webp);
+    height: 600px;
+    margin: 5%;
+    border-radius: 30px;
+    /* opacity: 0.5; */
+} */
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: ;
+}
